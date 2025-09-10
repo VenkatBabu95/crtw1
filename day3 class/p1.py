@@ -126,7 +126,7 @@
 # else:
 #     print("not palindrome")
 
-
+#count even count odd
 # n=int(input())
 # ce=0
 # co=0
@@ -139,4 +139,28 @@
 #     n=n//10
 # print(ce)
 # print(co)
+
+# postional even odd
+
+# n = int(input())
+# temp = n
+# count = 0
+# while temp > 0:
+#     count += 1
+#     temp = temp // 10
+# ce = 0  
+# co = 0  
+# for pos in range(1, count + 1):
+#     divisor = 10 ** (count - pos)
+#     digit = (n // divisor) % 10
+
+#     if pos % 2 == 0 and digit % 2 == 0:
+#         ce += 1
+#     elif pos % 2 != 0 and digit % 2 != 0:
+#         co += 1
+
+# print(ce)
+# print(co)
+
+
 
