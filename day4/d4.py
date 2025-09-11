@@ -98,14 +98,14 @@
 # write a program to convert any given base to desired base
 # constrain: conversion range will be 1-10
 
-def is_valid(n,g,d):
-    temp=n
-    while(temp!=0):
-        if(temp%10>=g):
-            return False
-        else:
-            temp=temp//10
-    return True
+# def is_valid(n,g,d):
+#     temp=n
+#     while(temp!=0):
+#         if(temp%10>=g):
+#             return False
+#         else:
+#             temp=temp//10
+#     return True
 def convert(n,g,d):
     temp=n
     x=0
@@ -116,17 +116,70 @@ def convert(n,g,d):
         temp=temp//d
     return(desired)
 
-n=int(input("enter a number to convert: "))
-g=int(input("Enter the given Base: "))
-d=int(input("Enter the desired base: "))
-if((g>=1 and g<=10) and (d>=1 and d<=10)):
-    if(is_valid(n,g,d)):
-        if(g==10 or d==10):
-            print(f"the desired value is {convert(n,g,d)} ")
-        else:
-            x=convert(n,g,10)
-            print(convert(x,10,d))
-    else:
-        print("the given number with the base is not valid")
-else:
-    print("The given base or desired base should be between 1-10")
+# n=int(input("enter a number to convert: "))
+# g=int(input("Enter the given Base: "))
+# d=int(input("Enter the desired base: "))
+# if((g>=1 and g<=10) and (d>=1 and d<=10)):
+#     if(is_valid(n,g,d)):
+#         if(g==10 or d==10):
+#             res=convert(n,g,d)
+#             print(res)
+#         else:
+#             x=convert(n,g,10)
+#             res=convert(x,10,d)
+#             print(res)
+#     else:
+#         print("the given number with the base is not valid")
+# else:
+#     print("The given base or desired base should be between 1-10")
+
+
+
+##new question
+
+# n=12654
+# t=n
+# m=0
+# while(t>1):
+#     d=t%10
+#     if d>=m:
+#         m=d
+#     t//=10
+# print(m)
+
+
+# newbval=convert(n,10,m)
+# print(newbval)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def fact1(n):
+#     f=1
+#     for i in range(1,n+1):
+#         f=f*i
+#     return f
+    
+# print(fact1(5))
+
+# while(n>1):
+#     d=n%10
+
+import math
+def rev(n):
+    d=int(math.log10(n))+1
+    while   
