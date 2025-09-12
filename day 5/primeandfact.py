@@ -212,17 +212,50 @@
 #     n2=fib
 
 
+# ## fibo 2 
+# n=int(input())
+# n1=2
+# n2=3
+# n3=0
+# sum1=0
+# sum2=0
+# print(n1,n2,n3)
+# for i in range(4,n+1):
+#     sum1=n1+n2+n3
+#     print(sum1)
+#     n1=n2
+#     n2=n3
+#     n3=sum1
+# ## fibo 3
+# n=int(input())
+# n1=2
+# n2=3
+# n3=0
+# sum1=0
+# sum2=0
+# print(n1,n2,n3)
+# for i in range(4,n+1):
+#     sum1=n1+n2+n3
+#     sum2+=sum1
+#     print(sum1)
+#     n1=n2
+#     n2=n3
+#     n3=sum1
+# print(sum2)
 
-n=int(input())
-n1=2
-n2=3
-n3=0
-sum1=0
-sum2=0
-print(n1,n2,n3)
-for i in range(4,n+1):
-    sum1=n1+n2+n3
-    n1=n2
-    n2=n3
-    n3=sum1
-    
+
+
+a,b=map(int,input().split())
+def gcd(a,b):
+    ans=0
+    while True:
+        rem=a%b
+        if(rem==0):
+            ans=b
+            break
+        a=b
+        b=rem
+    return ans
+print((a*b)//gcd(a,b))
+
+
