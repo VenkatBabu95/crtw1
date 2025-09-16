@@ -65,4 +65,56 @@
 # n=6
 # print(missing_element(l,n))
 
+# #bubble sort
+# def bubble_sort(l):
+#     n=len(l)
+#     for i in range(n):
+#         for j in range(0,n-i-1):
+#             if l[j]>l[j+1]:
+#                 l[j],l[j+1]=l[j+1],l[j]
+#     return l
+# l=[64, 34, 25, 12, 22, 11, 90]
+# print(bubble_sort(l))
+# print(bubble_sort([5,1,4,2,8],reverse=True))
+
+# # [5,6,5,3,4,8,5,6]=>[1,1,2,1,1,1,3,2].. print count of each digit according to their position
+# def count_position(l):
+#     count_dict={}
+#     result=[]
+#     for num in l:
+#         if num in count_dict:
+#             count_dict[num] += 1
+#         else:
+#             count_dict[num] = 1
+#         result.append(count_dict[num])
+#     return result
+# l=[5,6,5,3,4,8,5,6]
+# print(count_position(l))
+
+# l=[5,4,6,3,2,1,17,25]=>[25,5,4,6,3,2,1,17] rotate the list by 1 position towards right
+# def rotate_right(l):
+#     return [l[-1]] + l[:-1]
+# print(rotate_right([5,4,6,3,2,1,17,25]))
+
+# # l=[5,4,6,3,2,1,17,25]=>[4,6,3,2,1,17,25,5] rotate the list by 1 position towards left
+# def rotate_left(l):
+#     return l[1:] + [l[0]]
+# print(rotate_left([5,4,6,3,2,1,17,25]))
+
+# # by n positions
+# l=[5,4,7,14,1,3,2,8]
+# n=int(input("Enter no. of positions to rotate: "))
+# b=l[n:]+l[:n]
+# print(b)
+
+# #rotate by 1 position in between given s1 and s2
+# def rotate_in_between(l,s1,s2):
+#     if s1<0 or s2>=len(l) or s1>=s2:
+#         return "Invalid indices"
+#     return l[:s1] + [l[s2]] + l[s1:s2] + l[s2+1:]
+# l=[5,4,7,14,1,3,2,8]
+# s1=int(input("Enter start index: "))
+# s2=int(input("Enter end index: "))
+# print(rotate_in_between(l,s1,s2))
+
 
