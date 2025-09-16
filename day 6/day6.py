@@ -39,18 +39,30 @@
 # l=[1, 2, 2, 3, 4, 4, 4, 5]
 # occur_counter(l)
 
-#find element which is repeated most no. of times in a list without functions
-l=[1, 2, 2, 3, 4, 4, 4, 5]
-o={}
-for num in l:
-    if num in o:
-        o[num] += 1
-    else:
-        o[num] = 1
-max_count=0
-max_num=None
-for i in o:
-    if o[i]>max_count:
-        max_count=o[i]
-        max_num=i
-print(f"{max_num}-{max_count}")
+# #find element which is repeated most no. of times in a list without functions
+# l=[1, 2, 2, 3, 4, 4, 4, 5]
+# o={}
+# for num in l:
+#     if num in o:
+#         o[num] += 1
+#     else:
+#         o[num] = 1
+# max_count=0
+# max_num=None
+# for i in o:
+#     if o[i]>max_count:
+#         max_count=o[i]
+#         max_num=i
+# print(f"{max_num}-{max_count}")
+
+#single list missing element
+# def missing_element(l,n):
+#     l=set(l)
+#     total_sum=n*(n+1)//2
+#     actual_sum=sum(l)
+#     return total_sum-actual_sum
+# l=[1,1,2,3,4,6]
+# n=6
+# print(missing_element(l,n))
+
+
