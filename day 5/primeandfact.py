@@ -257,5 +257,4 @@ def gcd(a,b):
         b=rem
     return ans
 print((a*b)//gcd(a,b))
-
-
+print("gcd",gcd(a,b))
