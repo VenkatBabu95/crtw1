@@ -29,3 +29,13 @@ def occur_set(l):
         print(f"{i}-{l.count(i)}")
 l=[1, 2, 2, 3, 4, 4, 4, 5]
 occur_set(l)
+
+#occurence of each no. in a list using collections
+from collections import Counter
+def occur_counter(l):
+    o=Counter(l)
+    for i in o:
+        print(f"{i}-{o[i]}")
+l=[1, 2, 2, 3, 4, 4, 4, 5]
+occur_counter(l)
+
