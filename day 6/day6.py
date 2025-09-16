@@ -118,3 +118,35 @@
 # print(rotate_in_between(l,s1,s2))
 
 
+#selection sort
+# l=[64, 25, 12, 22, 11]
+# def selectionsort(L):
+#     n = len(L)
+#     if n < 1:
+#         return(L)
+#     for i in range(n):
+#         minpos = i
+#         for j in range(i+1,n):
+#             if L[j] < L[minpos]:
+#                 minpos = j
+#         (L[i],L[minpos]) = (L[minpos],L[i])
+#     return(L)
+# print(selectionsort(l))
+
+
+#bubble sort
+l=[64, 25, 12, 22, 11]
+def bubble_sort(L):
+    n = len(L)
+    if n < 1:
+        return(L)
+    i = 0
+    while i < n-1:
+        if L[i] > L[i+1]:
+            (L[i],L[i+1]) = (L[i+1],L[i])
+            i = 0
+        else:
+            i += 1
+    return(L)
+print(bubble_sort(l))
+
